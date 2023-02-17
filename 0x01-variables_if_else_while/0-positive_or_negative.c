@@ -4,7 +4,9 @@
 /* main - Entry point*/
 /* Descriptin: The program prints if a number is postive, negative, or zero*/
 /* Return: Always 0 (Success)*/
+
 int main(void)
+
 {
 	int n;
 
@@ -20,7 +22,7 @@ int main(void)
 	}
 	else
 	{
-	printf("is negative\n");
+	printf("%d is negative\n", n);
 	}
 	return (0);
 }
