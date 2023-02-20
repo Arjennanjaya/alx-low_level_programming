@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -8,18 +6,22 @@
 
 int main(void)
 {
-	int d, p;
+	int i;
+	single_digit;
+	double_digit;
 
-	for (d = '0'; d < '9'; d++)
+	for (i = 0; i < 100; i++)
 	{
-	for (p = d + 1; p <= '9'; p++)
+	single_digit = i % 10;
+	double_digit = i / 10;
+	
+	if (double_digit < single_digit)
 	{
-	if (p != d)
+	putchar(double_digit + '0');
+	putchar(single_digit + '0');
+
+	if (i < 89)
 	{
-	putchar(d);
-	putchar(p);
-	if (d == '8' && p == '9')
-	continue;
 	putchar(',');
 	putchar(' ');
 	}
