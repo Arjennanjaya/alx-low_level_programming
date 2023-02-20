@@ -13,9 +13,9 @@ int main(void)
 
 	for (i = 0; i < 1000; i++)
 	{
-	single_digit = i % 10;
-	double_digit = i / 100;
-	triple_digit = (i / 10) % 10;
+	single_digit = i / 100;
+	double_digit = (i / 10) % 10;
+	triple_digit = (i % 10);
 
 	if (single_digit < double_digit && double_digit < triple_digit)
 	{
@@ -25,8 +25,8 @@ int main(void)
 
 	if (i < 800)
 	{
-	putchar(',');
-	putchar(' ');
+	putchar(44);
+	putchar(32);
 	}
 	}
 	}
