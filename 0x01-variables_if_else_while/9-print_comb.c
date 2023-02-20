@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -9,12 +7,12 @@
 int main(void)
 {
 
-	int d;
+	int number;
 
-	for (d = '0'; d <= '9'; d++)
+	for (number = 0; number < 10; number++)
 	{
-	putchar(d);
-	if (d != '9')
+	putchar(number + '0');
+	if (number < 9)
 	{
 	putchar(',');
 	putchar(' ');
