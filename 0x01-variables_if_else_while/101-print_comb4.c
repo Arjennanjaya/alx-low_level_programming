@@ -23,10 +23,10 @@ int main(void)
 	putchar(double_digit + '0');
 	putchar(triple_digit + '0');
 
-	if (i < 800)
+	if (i < 789)
 	{
-	putchar(44);
-	putchar(32);
+	putchar(',');
+	putchar(' ');
 	}
 	}
 	}
